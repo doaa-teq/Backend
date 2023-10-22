@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Tags</title>
+    <title>Users</title>
 
     <!-- Bootstrap -->
     <link href="cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
@@ -201,7 +201,7 @@
           <div class="">
             <div class="page-title">
               <div class="title_left">
-                <h3>Manage Tags</h3>
+                <h3>Manage <small>Users</small></h3>
               </div>
 
               <div class="title_right">
@@ -222,7 +222,7 @@
               <div class="col-md-12 col-sm-12 ">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>List of Tags</h2>
+                    <h2>List of Users</h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
@@ -245,27 +245,35 @@
                     <table id="datatable" class="table table-striped table-bordered" style="width:100%">
                       <thead>
                         <tr>
-                          <th>Tag Name</th>
+                          <th>Registration Date</th>
+                          <th>Name</th>
+                          <th>Username</th>
+                          <th>Email</th>
+                          <th>Active</th>
                           <th>Edit</th>
-                          <th>Delete</th>
                         </tr>
                       </thead>
 
 
                       <tbody>
-                        <?php
+                      <?php
                         $host="localhost";
                         $username="root";//return the data from config file of cApatchi
-                        $password="";//for connection we used try and catch pdo(php data object)
+                        $password='';//for connection we used try and catch pdo(php data object)
                         try{
                             $conn=new PDO("mysql:host=$host;dbname=final_project",$username,$password);
                             $conn->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-                            $DATA=$conn->query("select * from tags")->fetchAll();
+                            $DATA=$conn->query("select* from user")->fetchAll();
                             foreach($DATA as $row){
                                 echo"<tr>
-                                <td>{$row['tag_name']}</td>
-                                <td><a href='editCategory.php'?id={$row['tag_id']}>EDIT</a></td>
-                                <td><a href='deleteCategory.php'?id={$row['tag_id']}>DELETE</a></td>
+                                <tr>
+                                <td>{$row['date']}</td>
+                                <td>{$row['name']}</td>
+                                <td>{$row['user_name']}</td>
+                                <td>{$row['email']}</td>
+                                <td>{$row['active']}</td>
+                                <td><img src='./images/edit.png' alt='Edit'></td>
+                              
                               </tr>";
                             }
                             echo "</table>";

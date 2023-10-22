@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Tags</title>
+    <title>Photos</title>
 
     <!-- Bootstrap -->
     <link href="cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
@@ -74,7 +74,7 @@
 								</li>
 								<li><a><i class="fa fa-desktop"></i> Photos <span class="fa fa-chevron-down"></span></a>
 									<ul class="nav child_menu">
-										<li><a href="addPhoto.html">Add Photo</a></li>
+										<li><a href="addPhoto.html">Add Photos</a></li>
 										<li><a href="photos.html">Photos List</a></li>
 									</ul>
 								</li>
@@ -201,7 +201,7 @@
           <div class="">
             <div class="page-title">
               <div class="title_left">
-                <h3>Manage Tags</h3>
+                <h3>Manage Photos</h3>
               </div>
 
               <div class="title_right">
@@ -222,7 +222,7 @@
               <div class="col-md-12 col-sm-12 ">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>List of Tags</h2>
+                    <h2>List of Photos</h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
@@ -245,27 +245,29 @@
                     <table id="datatable" class="table table-striped table-bordered" style="width:100%">
                       <thead>
                         <tr>
-                          <th>Tag Name</th>
+                          <th>Photo Date</th>
+                          <th>Title</th>
+                          <th>Active</th>
                           <th>Edit</th>
                           <th>Delete</th>
                         </tr>
                       </thead>
-
-
                       <tbody>
-                        <?php
+                      <?php
                         $host="localhost";
                         $username="root";//return the data from config file of cApatchi
-                        $password="";//for connection we used try and catch pdo(php data object)
+                        $password='';//for connection we used try and catch pdo(php data object)
                         try{
                             $conn=new PDO("mysql:host=$host;dbname=final_project",$username,$password);
                             $conn->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-                            $DATA=$conn->query("select * from tags")->fetchAll();
+                            $DATA=$conn->query("select * from photo_details")->fetchAll();
                             foreach($DATA as $row){
                                 echo"<tr>
-                                <td>{$row['tag_name']}</td>
-                                <td><a href='editCategory.php'?id={$row['tag_id']}>EDIT</a></td>
-                                <td><a href='deleteCategory.php'?id={$row['tag_id']}>DELETE</a></td>
+                                <td>{$row['date']}</td>
+                                <td>{$row['title']}</td>
+                                <td>{$row['active']}</td>
+                                <td><a href='editphoto.php'>EDIT</a></td>
+                                <td><a href='deletephoto.php'>DELETE</a></td>
                               </tr>";
                             }
                             echo "</table>";
@@ -273,6 +275,7 @@
                             echo "connection failed".$D->getMessage();
                         }
                         ?>
+                        
                         
                       </tbody>
                     </table>
