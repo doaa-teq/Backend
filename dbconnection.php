@@ -3,7 +3,7 @@ $host="localhost";
 $username="root";
 $password="";
 try{
-    $conn= new PDO("mysql::host=$host;dbname=school",$username,$password);
+    $conn= new PDO("mysql::host=$host;dbname=final_project",$username,$password);
     $conn->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
     echo "connected sussefly";
 }catch(Exception $d){
