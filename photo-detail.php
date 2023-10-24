@@ -1,3 +1,6 @@
+<?php
+include("./admin/dbconnection.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -62,12 +65,25 @@ https://templatemo.com/tm-556-catalog-z
     </div>
 
     <div class="container-fluid tm-container-content tm-mt-60">
+        <?php
+         
+         $conn = mysqli_connect("localhost","root","","final_project");
+         if isset($GET['id']){
+             $id=$GET['id'];
+             $seq="SELECT * from photo_details WHERE photo_id='$id'";
+             $data=mysql_query($conn,$seq);
+         }
+         foreach $data as $row
+         {
+
+         
+        ?>
         <div class="row mb-4">
-            <h2 class="col-12 tm-text-primary">Photo title goes here</h2>
+            <h2 class="col-12 tm-text-primary">Photo title</h2>
         </div>
         <div class="row tm-mb-90">            
             <div class="col-xl-8 col-lg-7 col-md-6 col-sm-12">
-                <img src="img/img-01-big.jpg" alt="Image" class="img-fluid">
+            <img src="img/about.jpj" height="550" width="900" >
             </div>
             <div class="col-xl-4 col-lg-5 col-md-6 col-sm-12">
                 <div class="tm-bg-gray tm-video-details">
@@ -75,18 +91,18 @@ https://templatemo.com/tm-556-catalog-z
                         Please support us by making <a href="https://paypal.me/templatemo" target="_parent" rel="sponsored">a PayPal donation</a>. Nam ex nibh, efficitur eget libero ut, placerat aliquet justo. Cras nec varius leo.
                     </p>
                     <div class="text-center mb-5">
-                        <a href="#" class="btn btn-primary tm-btn-big">Download</a>
+                        <a href="./admin/images/" class="btn btn-primary tm-btn-big">Download</a>
                     </div>                    
                     <div class="mb-4 d-flex flex-wrap">
                         <div class="mr-4 mb-2">
-                            <span class="tm-text-gray-dark">Dimension: </span><span class="tm-text-primary">1920x1080</span>
+                            <span class="tm-text-gray-dark">Dimension: </span><span class="tm-text-primary"></span>
                         </div>
                         <div class="mr-4 mb-2">
-                            <span class="tm-text-gray-dark">Format: </span><span class="tm-text-primary">JPG</span>
+                            <span class="tm-text-gray-dark">Format: </span><span class="tm-text-primary"></span>
                         </div>
                     </div>
                     <div class="mb-4">
-                        <h3 class="tm-text-gray-dark mb-3">License</h3>
+                        <h3 class="tm-text-gray-dark mb-3"><?php$_GET['license']?></h3>
                         <p>Free for both personal and commercial use. No need to pay anything. No need to make any attribution.</p>
                     </div>
                     <div>
@@ -420,6 +436,9 @@ https://templatemo.com/tm-556-catalog-z
                     <span>11,300 views</span>
                 </div>
             </div>
+            <?php
+         }
+            ?>
         </div> <!-- row -->
     </div> <!-- container-fluid, tm-container-content -->
 
