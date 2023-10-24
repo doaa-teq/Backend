@@ -78,7 +78,7 @@ https://templatemo.com/tm-556-catalog-z
                     <img src="img/img-03.jpg" alt="Image" class="img-fluid">
                     <figcaption class="d-flex align-items-center justify-content-center">
                         <h2>Clocks</h2>
-                        <a href="photo-detail.html">View more</a>
+                        <a href="clock.php">View more</a>
                     </figcaption>                    
                 </figure>
                 <div class="d-flex justify-content-between tm-text-gray">
@@ -91,7 +91,7 @@ https://templatemo.com/tm-556-catalog-z
                     <img src="img/img-04.jpg" alt="Image" class="img-fluid">
                     <figcaption class="d-flex align-items-center justify-content-center">
                         <h2>Plants</h2>
-                        <a href="photo-detail.html">View more</a>
+                        <a href="plant.php">View more</a>
                     </figcaption>                    
                 </figure>
                 <div class="d-flex justify-content-between tm-text-gray">
@@ -104,7 +104,7 @@ https://templatemo.com/tm-556-catalog-z
                     <img src="img/img-05.jpg" alt="Image" class="img-fluid">
                     <figcaption class="d-flex align-items-center justify-content-center">
                         <h2>Morning</h2>
-                        <a href="photo-detail.html">View more</a>
+                        <a href="morning.php">View more</a>
                     </figcaption>                    
                 </figure>
                 <div class="d-flex justify-content-between tm-text-gray">
@@ -128,10 +128,10 @@ https://templatemo.com/tm-556-catalog-z
             
             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
                 <figure class="effect-ming tm-video-item">
-                    <img src="img/img-01.jpg" alt="Image" class="img-fluid">
+                    <img src="img/img-001.jpg" alt="Image" class="img-fluid">
                     <figcaption class="d-flex align-items-center justify-content-center">
                         <h2>Hangers</h2>
-                        <a href="photo-detail.html">View more</a>
+                        <a href="Hungerdetail.php">View more</a>
                     </figcaption>                    
                 </figure>
                 <div class="d-flex justify-content-between tm-text-gray">
@@ -144,7 +144,7 @@ https://templatemo.com/tm-556-catalog-z
                     <img src="img/img-02.jpg" alt="Image" class="img-fluid">
                     <figcaption class="d-flex align-items-center justify-content-center">
                         <h2>Perfumes</h2>
-                        <a href="photo-detail.html">View more</a>
+                        <a href="perfunedetail.php.html">View more</a>
                     </figcaption>                    
                 </figure>
                 <div class="d-flex justify-content-between tm-text-gray">
@@ -157,7 +157,7 @@ https://templatemo.com/tm-556-catalog-z
                     <img src="img/img-07.jpg" alt="Image" class="img-fluid">
                     <figcaption class="d-flex align-items-center justify-content-center">
                         <h2>Bus</h2>
-                        <a href="photo-detail.html">View more</a>
+                        <a href="busdetail.php">View more</a>
                     </figcaption>                    
                 </figure>
                 <div class="d-flex justify-content-between tm-text-gray">
@@ -196,7 +196,7 @@ https://templatemo.com/tm-556-catalog-z
                     <img src="img/img-10.jpg" alt="Image" class="img-fluid">
                     <figcaption class="d-flex align-items-center justify-content-center">
                         <h2>Flowers</h2>
-                        <a href="photo-detail.html">View more</a>
+                        <a href="FLOWERS.php">View more</a>
                     </figcaption>                    
                 </figure>
                 <div class="d-flex justify-content-between tm-text-gray">
@@ -209,7 +209,7 @@ https://templatemo.com/tm-556-catalog-z
                     <img src="img/img-11.jpg" alt="Image" class="img-fluid">
                     <figcaption class="d-flex align-items-center justify-content-center">
                         <h2>Rosy</h2>
-                        <a href="photo-detail.html">View more</a>
+                        <a href="rosy.php">View more</a>
                     </figcaption>                    
                 </figure>
                 <div class="d-flex justify-content-between tm-text-gray">
@@ -222,7 +222,7 @@ https://templatemo.com/tm-556-catalog-z
                     <img src="img/img-12.jpg" alt="Image" class="img-fluid">
                     <figcaption class="d-flex align-items-center justify-content-center">
                         <h2>Rocki</h2>
-                        <a href="photo-detail.html">View more</a>
+                        <a href="roky.php">View more</a>
                     </figcaption>                    
                 </figure>
                 <div class="d-flex justify-content-between tm-text-gray">
@@ -235,7 +235,7 @@ https://templatemo.com/tm-556-catalog-z
                     <img src="img/img-13.jpg" alt="Image" class="img-fluid">
                     <figcaption class="d-flex align-items-center justify-content-center">
                         <h2>Purple</h2>
-                        <a href="photo-detail.html">View more</a>
+                        <a href="purple.php">View more</a>
                     </figcaption>                    
                 </figure>
                 <div class="d-flex justify-content-between tm-text-gray">
@@ -248,7 +248,7 @@ https://templatemo.com/tm-556-catalog-z
                     <img src="img/img-14.jpg" alt="Image" class="img-fluid">
                     <figcaption class="d-flex align-items-center justify-content-center">
                         <h2>Sea</h2>
-                        <a href="photo-detail.html">View more</a>
+                        <a href="sea.php">View more</a>
                     </figcaption>                    
                 </figure>
                 <div class="d-flex justify-content-between tm-text-gray">
@@ -261,7 +261,7 @@ https://templatemo.com/tm-556-catalog-z
                     <img src="img/img-15.jpg" alt="Image" class="img-fluid">
                     <figcaption class="d-flex align-items-center justify-content-center">
                         <h2>Turtle</h2>
-                        <a href="photo-detail.html">View more</a>
+                        <a href="turtle.php">View more</a>
                     </figcaption>                    
                 </figure>
                 <div class="d-flex justify-content-between tm-text-gray">
@@ -274,7 +274,7 @@ https://templatemo.com/tm-556-catalog-z
                     <img src="img/img-16.jpg" alt="Image" class="img-fluid">
                     <figcaption class="d-flex align-items-center justify-content-center">
                         <h2>Peace</h2>
-                        <a href="photo-detail.html">View more</a>
+                        <a href="peace.php">View more</a>
                     </figcaption>                    
                 </figure>
                 <div class="d-flex justify-content-between tm-text-gray">
@@ -287,12 +287,12 @@ https://templatemo.com/tm-556-catalog-z
             <div class="col-12 d-flex justify-content-between align-items-center tm-paging-col">
                 <a href="javascript:void(0);" class="btn btn-primary tm-btn-prev mb-2 disabled">Previous</a>
                 <div class="tm-paging d-flex">
-                    <a href="javascript:void(0);" class="active tm-paging-link">1</a>
-                    <a href="javascript:void(0);" class="tm-paging-link">2</a>
-                    <a href="javascript:void(0);" class="tm-paging-link">3</a>
-                    <a href="javascript:void(0);" class="tm-paging-link">4</a>
+                    <a href="index.php" class="active tm-paging-link">1</a>
+                    <nv><a href="2.php" class="tm-paging-link">2</a></nv>
+                    <a href="3.php" class="tm-paging-link">3</a>
+                    <a href="4.php" class="tm-paging-link">4</a>
                 </div>
-                <a href="javascript:void(0);" class="btn btn-primary tm-btn-next">Next Page</a>
+                <a href="2.php" class="btn btn-primary tm-btn-next">Next Page</a>
             </div>            
         </div>
     </div> <!-- container-fluid, tm-container-content -->
